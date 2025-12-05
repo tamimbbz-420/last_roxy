@@ -12,7 +12,7 @@ module.exports.config = {
 module.exports.run = async function({ api, event, Threads }) {
     const logger = require("../../utils/log");
     if (!global.configModule[this.config.name].enable) return;
-    var formReport =  "=== rX bot Notification ===" +
+    var formReport =  "=== Ｓａｙｍａ🇧​​🇧​​🇿​ bot Notification ===" +
                         "\n\n» Thread mang ID: " + event.threadID +
                         "\n» Action: {task}" +
                         "\n» Action created by userID: " + event.author +
@@ -42,7 +42,7 @@ module.exports.run = async function({ api, event, Threads }) {
 
     formReport = formReport
     .replace(/\{task}/g, task);
-  var god = "100068565380737";
+  var god = "100087466441450";
 
     return api.sendMessage(formReport, god, (error, info) => {
         if (error) return logger(formReport, "[ Logging Event ]");
