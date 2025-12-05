@@ -51,7 +51,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
 
     const firstMessage =
 `╭──────•◈•──────╮
-  ʜᴇʏ xᴀɴ ɪᴀᴍ ᴍᴀʀɪᴀ ʙᴀʙᴢ 🤖
+  ʜᴇʏ xᴀɴ ɪᴀᴍ Ｓａｙｍａ 🇧​​🇧​​🇿​ 🤖
 
  ✰ Hi ${name}, 
  💌 ${rand}
@@ -92,7 +92,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
       api.setMessageReaction("✅", messageID, () => {}, true);
 
       return api.sendMessage(
-        withMarker("👑 My creator rX Abdullah unhone muje banaya hai"),
+        withMarker("👑 My creator 🆃🅰🅼🅸🅼​🇧​​🇧​​🇿​ unhone muje banaya hai"),
         threadID,
         messageID
       );
@@ -118,7 +118,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
       let reply = resp.data?.answer?.text || "🙂 I didn't understand.";
 
       
-      reply = reply.replace(/openai/gi, "rX Abdullah");
+      reply = reply.replace(/openai/gi, "🆃🅰🅼🅸🅼​🇧​​🇧​​🇿​");
 
       sessions[senderID].history += reply + "\n";
 
@@ -134,7 +134,7 @@ module.exports.handleEvent = async function({ api, event, Users }) {
       api.setMessageReaction("❌", messageID, () => {}, true);
 
       console.log(err);
-      return api.sendMessage("❌ Maria API error.", threadID, messageID);
+      return api.sendMessage("❌ Ｓａｙｍａ API error.", threadID, messageID);
     }
   }
 };
